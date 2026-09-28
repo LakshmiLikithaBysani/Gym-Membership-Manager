@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gym Membership Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🏋️ Gym Membership Manager</h1>
+
+        <!-- Member Form -->
+
+        <div class="form">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Member Name"
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+            >
+
+            <input
+                type="number"
+                id="age"
+                placeholder="Age"
+            >
+
+            <select id="plan">
+
+                <option value="Monthly">
+                    Monthly - ₹1000
+                </option>
+
+                <option value="3 Months">
+                    3 Months - ₹2700
+                </option>
+
+                <option value="6 Months">
+                    6 Months - ₹5000
+                </option>
+
+                <option value="Yearly">
+                    Yearly - ₹9000
+                </option>
+
+            </select>
+
+            <label>Start Date</label>
+
+            <input
+                type="date"
+                id="startDate"
+            >
+
+            <select id="payment">
+
+                <option value="Paid">
+                    Paid
+                </option>
+
+                <option value="Pending">
+                    Pending
+                </option>
+
+            </select>
+
+            <button id="addButton">
+                ➕ Add Member
+            </button>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>Total</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Active</h3>
+                <p id="active">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Expired</h3>
+                <p id="expired">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Collected</h3>
+                <p id="collected">₹0</p>
+            </div>
+
+        </div>
+
+
+        <!-- Search -->
+
+        <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="🔎 Search member..."
+        >
+
+
+        <!-- Member List -->
+
+        <div id="memberList"></div>
+
+
+        <button id="resetButton">
+            🔄 Reset All Members
+        </button>
+
+
+        <p id="message"></p>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
